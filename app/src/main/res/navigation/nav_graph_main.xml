@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph_main"
+    app:startDestination="@id/usersPageFragment">
+
+    <fragment
+        android:id="@+id/usersPageFragment"
+        android:name="com.nazarrybickij.trainingtask.fragments.UsersPageFragment"
+        android:label="UsersPageFragment" >
+        <action
+            android:id="@+id/action_usersPageFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.nazarrybickij.trainingtask.fragments.UserFragment"
+        android:label="UserFragment"/>
+</navigation>
